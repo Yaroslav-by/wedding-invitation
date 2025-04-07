@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Mon Amour";
     src: local("Mon Amour"),
-         url("../fonts/mon-amour.woff2") format("woff2"),
-         url("../fonts/mon-amour.woff") format("woff");
+        url("../fonts/mon-amour.woff2") format("woff2"),
+        url("../fonts/mon-amour.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 @font-face {
     font-family: "Bickham Script Three";
     src: local("Mon Amour"),
-         url("../fonts/bickham-script-three.woff2") format("woff2"),
-         url("../fonts/bickham-script-three.woff") format("woff");
+        url("../fonts/bickham-script-three.woff2") format("woff2"),
+        url("../fonts/bickham-script-three.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -21,8 +21,8 @@
 @font-face {
     font-family: "Ekaterina";
     src: local("Mon Amour"),
-         url("../fonts/ekaterina-velikaya-two.woff2") format("woff2"),
-         url("../fonts/ekaterina-velikaya-two.woff") format("woff");
+        url("../fonts/ekaterina-velikaya-two.woff2") format("woff2"),
+        url("../fonts/ekaterina-velikaya-two.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -31,16 +31,24 @@
 @font-face {
     font-family: "Vena";
     src: local("Mon Amour"),
-         url("../fonts/vena.woff") format("woff");
+        url("../fonts/vena.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @keyframes flash {
-	0% { opacity: 1; } 
-	50% { opacity: .3; } 
-	100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 :root {
@@ -58,7 +66,7 @@ body {
     font-family: "Mon Amour", "Arial", serif;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 100%;    
+    width: 100%;
 }
 
 .hint {
@@ -109,37 +117,51 @@ body {
 .front-name-bride,
 .front-name-ampersand,
 .front-name-groom {
+    margin-top: 80px;
     position: absolute;
     width: 200px;
     font-family: "Bickham Script Three";
-    font-size: 70px;
-    text-align: right;
+    font-size: 75px;
+    text-align: center;
     color: var(--dark-brown);
     z-index: 1000;
 }
 
+.front-name-groom {
+    text-align: right;
+}
+
 .front-name-bride {
-    top: 190px;
-    left: 190px;
+    text-align: left;
 }
 
 .front-name-ampersand {
-    top: 220px;
-    left: 215px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.front-name-bride {
+    top: 190px;
+    left: 140px;
+}
+
+.front-name-ampersand {
+    top: 250px;
+    left: 320px;
 }
 
 .front-name-groom {
-    top: 275px;
-    left: 155px;
+    top: 285px;
+    left: 200px;
 }
 
 .front-date {
     position: absolute;
     top: 410px;
-    left: 179px;
+    left: 175px;
     width: 200px;
     font-family: "Vena";
-    font-size: 30px;
+    font-size: 35px;
     color: var(--light-brown);
     z-index: 1000;
 }
